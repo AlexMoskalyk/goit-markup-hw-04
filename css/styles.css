@@ -46,6 +46,9 @@ ul {
 .site-nav .link.active {
   color: var(--accent-blue-colour);
 }
+:focus {
+  outline: none;
+}
 
 /* .list {
   list-style: none;
@@ -360,6 +363,41 @@ body {
 
 .our-team-box {
   padding-top: 30px;
+}
+
+.our-team-icon-box {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  fill: var(--primary-text-colour);
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-colour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-blue-colour);
+  border: none;
+}
+
+.social-link:hover .our-team-icon {
+  fill: var(--bg-colour);
+}
+
+.social-link:focus .our-team-icon {
+  fill: var(--bg-colour);
+}
+.our-team-icon {
+  fill: var(--primary-text-colour);
 }
 
 /* .our-team.img {
