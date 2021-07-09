@@ -153,20 +153,41 @@ body {
 }
 
 .kontakt-nav .link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-colour);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  fill: var(--primary-text-colour);
 }
 
 .kontakt-nav .link:hover,
 .kontakt-nav .link:focus {
   color: var(--accent-blue-colour);
+  fill: var(--accent-blue-colour);
 }
 
+/* .kontakt-nav .item:hover,
+.kontakt-nav .item:focus {
+  color: var(--accent-blue-colour);
+} */
+
+.header-icon {
+  margin-right: 10px;
+}
+
+/* .header-icon-color {
+  fill: var(--primary-text-colour);
+} */
+
 /*------------------------------------------------------------ hero----------------------------------------------------------------- */
+.button.hero-btn {
+  margin: 0 auto;
+}
 
 .hero-title {
   margin: 0 auto;
@@ -182,14 +203,17 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-.hero.section {
-  background-color: var(--secondary-bg-colour);
+.section.hero {
+  margin: 0 auto;
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(39, 47, 133, 0.4)),
+    url(../images/main-bg-hero.jpg), url(../images/second-bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.button.hero-btn {
-  margin: 0 auto;
 }
 
 /* Стиль для заголовков секций */
@@ -234,6 +258,16 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   max-width: 270px;
+}
+
+.features-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  height: 120px;
+  background-color: var(--background-our-team-section);
+  margin-bottom: 30px;
 }
 
 /*------------------------------------------------------------ what-we-can----------------------------------------------------------------- */
