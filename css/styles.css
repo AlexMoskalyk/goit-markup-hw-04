@@ -34,6 +34,7 @@ ul {
   --logo-accent-colour: #000000;
   --secondary-bg-colour: #2f303a;
   --background-our-team-section: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 .pointer,
@@ -84,12 +85,13 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* ----------------------------------------------------------STUDIA-------------------------------------------------------------------  */
 
 /*------------------------------------------------------------ header----------------------------------------------------------------- */
+
 .section.header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -397,12 +399,64 @@ body {
   fill: var(--bg-colour);
 }
 .our-team-icon {
-  fill: var(--primary-text-colour);
+  fill: var(--icon-color);
 }
 
 /* .our-team.img {
   margin-bottom: 30px;
 } */
+/*------------------------------------------------- clients -----------------------------------------------*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 80px;
+}
+.clients-list-box {
+  display: flex;
+  margin-left: -30px;
+}
+.clients-item {
+  margin-left: 30px;
+  display: flex;
+  flex-basis: calc((100% - 180px) / 6);
+}
+
+.clients .title {
+  color: var(--secondary-text-colour);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.clients-link {
+  min-width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-blue-colour);
+}
+
+.icon {
+  fill: var(--icon-color);
+}
+
+.clients-link:hover .icon {
+  fill: var(--accent-blue-colour);
+}
+
+.clients-link:focus .icon {
+  fill: var(--accent-blue-colour);
+}
 /*------------------------------------------------------------ footer----------------------------------------------------------------- */
 
 .section.footer {
@@ -415,7 +469,8 @@ body {
   padding-top: 0;
   padding-bottom: 0px;
 }
-
+.footer-section-block {
+}
 .footer .list {
   padding-top: 0;
   padding-bottom: 0px;
@@ -457,6 +512,48 @@ body {
 
 .accent-footer {
   color: var(--bg-colour);
+}
+
+.footer-flexbox {
+  display: flex;
+}
+
+.footer-section-block {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.footer-icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section-block .title {
+  color: var(--bg-colour);
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.footer-icon {
+  fill: var(--bg-colour);
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: var(--bg-colour);
+}
+
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--accent-blue-colour);
 }
 
 /*------------------------------------------------------------ PORTFOLIO----------------------------------------------------------------- */
@@ -512,6 +609,11 @@ body {
 .portfolio-examples .item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-examples .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*  border: 1px solid #eeeeee; */ /* не поимаю почему ломаеться когда подключаю */
